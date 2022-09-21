@@ -43,6 +43,6 @@ app.use("/api/pizza",pizzaRouter)
 app.use("/api/order",orderRouter)
 
 
-server.listen(8000,() =>{
+server.listen(process.env.PORT || 8000,() =>{
     console.log("server is running...")
 })
